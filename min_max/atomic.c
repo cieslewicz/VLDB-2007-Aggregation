@@ -1,5 +1,4 @@
 /*
- *
  * File: atomic.c
  * Author: John Cieslewicz [johnc@cs.columbia.edu]
  * Copyright (c) 2007 The Trustees of Columbia University
@@ -37,6 +36,7 @@ void AggregateAtomic(Aggregate a, const int id,
 
   for(i = start; i <= end; i++)
     {
+
       key = input[i].group;
 
       bool done = false; /* flag set when the current tuple is processed */
